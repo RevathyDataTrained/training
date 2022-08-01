@@ -1,5 +1,5 @@
 print("welcome to training session")
 print("i am revathy")
 print("first branch")
-print("how are you ")
+print("4_5=10")
 
