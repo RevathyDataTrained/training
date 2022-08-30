@@ -30,24 +30,27 @@ Visual studio</br>
 * Retry_delay:Time taken to run tha dag again</br>
 * Catch-up:An Airflow DAG with a start_date, possibly an end_date, and a schedule_interval defines a series of intervals which the scheduler turns into individual DAG Runs and executes. The scheduler, by default, will kick off a DAG Run for any data interval that has not been run since the last data interval (or has been cleared). This concept is called Catchup.</br>
 ### Dependencies
-The training_model_A depends on training_model_B, training_model_C depends on training_models. if training_model_A fails then training_model_B will not be executed gives upstream_failed. </br>
-![dag4](https://user-images.githubusercontent.com/99247642/187393918-2221e634-cf19-4e13-8a09-a58802819641.png)</br>
-#### Airflow dashboard</br>
-*Viksara dag has been created</br>
-![dag6](https://user-images.githubusercontent.com/99247642/187394681-94e2ebd7-d493-4780-964d-f2ea35a820a7.png)</br>
+The training_model_A depends on training_model_B, training_model_C depends on training_models. if training_model_A fails then training_model_B will not be executed gives upstream_failed. </br></br>
+![dag4](https://user-images.githubusercontent.com/99247642/187393918-2221e634-cf19-4e13-8a09-a58802819641.png)</br></br>
+### Airflow dashboard</br>
+* Viksara dag has been created</br>
+![dag6](https://user-images.githubusercontent.com/99247642/187394681-94e2ebd7-d493-4780-964d-f2ea35a820a7.png)</br></br>
 The dag run sucessfully for 61 times</br>
-*Dependcies graph. training_modl_A depends upon training_model_B, training_model_B depends upon training_model_C</br>
-![dag8](https://user-images.githubusercontent.com/99247642/187395851-a9cb3923-1071-488f-bc70-fd753e244cfa.png)</br>
-*Green square indicates success status, red box shows failed status, orange shows upstream_failed status due to dependencies</br>
-![dag10](https://user-images.githubusercontent.com/99247642/187397284-d2ad33af-27b1-4cae-8457-417a62d169b7.png)</br>
-*The error, output,information are available on log tab</br>
-![dag13](https://user-images.githubusercontent.com/99247642/187398094-78e684c0-8b0c-408b-b8ef-bd0272d9e6fe.png)</br>
+* Graph. training_modl_A depends upon training_model_B, training_model_B depends upon training_model_C</br>
+![dag8](https://user-images.githubusercontent.com/99247642/187395851-a9cb3923-1071-488f-bc70-fd753e244cfa.png)</br></br>
+* Green square indicates success status, red box shows failed status, orange shows upstream_failed status due to dependencies</br></br>
+![dag56](https://user-images.githubusercontent.com/99247642/187405699-222f2be0-fda0-4bd0-9ddb-a62648ca132e.png)<br></br>
 
-![dag12](https://user-images.githubusercontent.com/99247642/187396847-51d0f4c4-ddb4-4583-826f-a26b64201218.png)</br>
-*The return values of the function are avaiable in xcom</br>
-![dag14](https://user-images.githubusercontent.com/99247642/187398336-bf6d195b-c165-44df-8677-e9a8d03d59fc.png)</br>
-*We can see code of the dag on code tag</br>
-![dag18](https://user-images.githubusercontent.com/99247642/187398985-4b6e0e83-f8a1-4dd6-8ccd-4a0927904b2c.png)
+* The error, output,information are available on log tab</br>
+![dag13](https://user-images.githubusercontent.com/99247642/187398094-78e684c0-8b0c-408b-b8ef-bd0272d9e6fe.png)</br></br>
+
+![dag12](https://user-images.githubusercontent.com/99247642/187396847-51d0f4c4-ddb4-4583-826f-a26b64201218.png)</br></br>
+* The return values of the function are avaiable in xcom</br>
+![dag14](https://user-images.githubusercontent.com/99247642/187398336-bf6d195b-c165-44df-8677-e9a8d03d59fc.png)</br></br>
+![dag15](https://user-images.githubusercontent.com/99247642/187404934-126fc485-d799-457e-8b7f-dd5bf5b42555.png)</br></br>
+
+* We can see code of the dag on code tag</br>
+![dag18](https://user-images.githubusercontent.com/99247642/187398985-4b6e0e83-f8a1-4dd6-8ccd-4a0927904b2c.png)</br></br>
 
 
 
